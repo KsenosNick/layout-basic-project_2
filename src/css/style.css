@@ -469,37 +469,38 @@ table {
 .main-section__content-container {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
-/* line 33, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 34, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .nav-menu__list {
   display: flex;
   flex-direction: row;
 }
 
-/* line 36, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 37, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .nav-menu__list-item {
   margin-right: 64px;
   font-size: 18px;
 }
 
-/* line 39, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 40, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .nav-menu__list-item:last-child {
   margin-right: 0;
 }
 
-/* line 42, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 43, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .left-wrapper {
   position: relative;
 }
 
-/* line 44, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 45, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .left-wrapper__img {
   position: relative;
   z-index: 5;
 }
 
-/* line 47, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 48, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .left-wrapper__rectangle-blue {
   position: absolute;
   top: 150px;
@@ -513,7 +514,7 @@ table {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* line 58, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 59, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .left-wrapper__rectangle-orange {
   position: absolute;
   top: 160px;
@@ -527,7 +528,7 @@ table {
   transform: rotate(-50.81deg);
 }
 
-/* line 69, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 70, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .left-wrapper__rectangle-grey {
   position: absolute;
   top: 190px;
@@ -541,17 +542,37 @@ table {
   transform: rotate(-36.15deg);
 }
 
-/* line 81, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 82, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .right-wrapper {
-  position: relative;
+  width: 372px;
+  position: absolute;
+  top: 150px;
+  right: 76px;
 }
 
-/* line 85, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 87, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+.right-wrapper__icons-box {
+  margin-bottom: 1px;
+  padding-left: 10px;
+}
+
+/* line 90, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+.right-wrapper__title {
+  margin-bottom: 5px;
+}
+
+/* line 92, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+.right-wrapper__text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* line 95, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .icons {
   display: inline-flex;
 }
 
-/* line 87, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 97, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .icons__item {
   display: flex;
   justify-content: center;
@@ -559,18 +580,67 @@ table {
   height: 40px;
   width: 40px;
   border: 1px solid #5290EA;
-  border-radius: 20px;
+  border-radius: 100px;
   margin-right: 17px;
 }
 
-/* line 96, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 106, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .icons__item:last-child {
   margin-right: 0;
 }
 
-/* line 98, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+/* line 108, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
 .icons__item i {
-  font-size: 20px;
+  font-size: 21px;
+}
+
+/* line 111, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+.title {
+  font-size: 72px;
+  position: relative;
+}
+
+/* line 114, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+.title__hr {
+  width: 65px;
+  position: absolute;
+  margin: 0;
+  border: none;
+  border-top: 1px solid  black;
+}
+
+/* line 121, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+.buttons {
+  display: inline-flex;
+}
+
+/* line 123, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+.buttons__main-btn {
+  margin-right: 32px;
+  width: 200px;
+  height: 60px;
+  background: #F28B64;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* line 135, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+.buttons__icon-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* line 138, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+.buttons__icon-btn img {
+  margin-right: 12px;
+}
+
+/* line 140, ../LAYOUT-BASIC/layout-basic-project_2/src/sass/style.sass */
+.buttons__text {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
